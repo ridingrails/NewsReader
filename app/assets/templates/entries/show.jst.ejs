@@ -1,0 +1,7 @@
+<ul>
+<% for(var attr in entry.attributes) { %>
+  <li>
+    <%= attr %> : <%= entry.escape(attr) %>
+  </li>
+<% }; %>
+</ul>

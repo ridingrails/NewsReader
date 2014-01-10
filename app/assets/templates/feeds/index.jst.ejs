@@ -1,0 +1,10 @@
+feeds index page
+
+<% feeds.each(function(feed) { %>
+  <%= feed.escape('title') %>
+  <br>
+  <%= feed.escape('url') %>
+  <br>
+  <a href='#' class="show_feed" data-id="<%= feed.id %>">Show Details</a>
+  <br><br>
+<% }); %>
